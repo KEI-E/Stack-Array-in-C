@@ -54,7 +54,7 @@ int main()
 	
 	do
 	{
-		printf("STACK MENU\n[1] Enter Element\n[2] Push\n[3] Pop\n[4] Empty\n[5] Clear\n[6] Top\n[7] Print\nChoice: ");
+		printf("STACK MENU\n[1] Push\n[2] Pop\n[3] Empty\n[4] Clear\n[5] Top\n[6] Print\nChoice: ");
 		scanf("%d", &choice);
 		
 		system("cls");
@@ -62,21 +62,6 @@ int main()
 		switch(choice)
 		{
 			case 1:
-				system("cls");
-	
-				do
-				{
-					printf("Add element: ");
-					scanf("%d", &element);
-					push(element);
-					
-					printf("Add again? (1 = YES | 0 = NO): ");
-					scanf("%d", &multElement);
-				}
-				while(multElement == 1);
-						
-				break;
-			case 2:
 				system("cls");
 				
 				do
@@ -91,7 +76,7 @@ int main()
 				while(multElement == 1);	
 						
 				break;
-			case 3:
+			case 2:
 				system("cls");
 				
 				do
@@ -104,18 +89,18 @@ int main()
 				while(multElement == 1);	
 				
 				break;
-			case 4:
+			case 3:
 				system("cls");
 				printf("Is stack empty?: %s", isEmpty() ? "Yes" : "No");
 				break;
-			case 5:
+			case 4:
 				clear();
 				printf("Stack is now empty.");
 				break;
-			case 6:
+			case 5:
 				printf("Top: %d", top());
 				break;
-			case 7:
+			case 6:
 				system("cls");
 				
 				printf("Elements in Stack: ");
